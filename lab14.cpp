@@ -10,6 +10,8 @@ private:
     int blue;
 
 public:
+    Color() : red(0), green(0), blue(0) {}
+    
     // getter
     int getRed() const { return red; }
     int getGreen() const { return green;}
@@ -33,6 +35,7 @@ public:
 
 int main() {
     cout << "Color Assignment";
+    cout << "---------------------\n";
 
     Color c1;
     c1.setRed(255);
@@ -48,6 +51,10 @@ int main() {
     c3.setRed(0);
     c3.setGreen(0);
     c3.setBlue(255);
-    
+
+    cout << "c1"; c1.print() ;
+    cout << "c2"; c2.print() ;
+    cout << "c3"; c3.print();
+
     return 0;
 }
